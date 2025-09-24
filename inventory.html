@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Inventory - MBGLOBAL WHEELS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>MBGLOBAL WHEELS</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="inventory.html" class="nav-link active">Inventory</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Vehicle Inventory</h1>
+            <p>Discover our premium selection of quality vehicles</p>
+        </div>
+    </section>
+
+    <!-- Inventory Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <h3>Filter Vehicles</h3>
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label for="vehicleType">Vehicle Type</label>
+                        <select id="vehicleType">
+                            <option value="all">All Types</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="sports">Sports</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="priceRange">Max Price: $<span id="priceValue">100000</span></label>
+                        <input type="range" id="priceRange" min="20000" max="100000" step="10000" value="100000">
+                    </div>
+                    <div class="filter-group">
+                        <label for="yearRange">Year Range</label>
+                        <select id="yearRange">
+                            <option value="all">All Years</option>
+                            <option value="2023-2025">2023-2025</option>
+                            <option value="2020-2022">2020-2022</option>
+                            <option value="2017-2019">2017-2019</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <button id="resetFilters" class="btn btn-secondary">Reset Filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicles Grid -->
+            <div class="inventory-grid">
+                <div class="vehicle-card" data-type="luxury" data-price="85000" data-year="2024">
+                    <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury Sedan" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>Mercedes-Benz S-Class 2024</h3>
+                        <p>Premium luxury sedan with advanced features</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 5,000 mi</span>
+                            <span>⛽ Hybrid</span>
+                            <span>🚗 4-Door</span>
+                        </div>
+                        <span class="price">$85,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card" data-type="suv" data-price="45000" data-year="2023">
+                    <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family SUV" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>Toyota Highlander 2023</h3>
+                        <p>Spacious family SUV perfect for adventures</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 15,000 mi</span>
+                            <span>⛽ Gasoline</span>
+                            <span>🚗 7-Seater</span>
+                        </div>
+                        <span class="price">$45,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card" data-type="sports" data-price="72000" data-year="2024">
+                    <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sports Car" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>Porsche 911 Carrera</h3>
+                        <p>High-performance sports car with luxury features</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 2,500 mi</span>
+                            <span>⛽ Premium</span>
+                            <span>🚗 2-Door</span>
+                        </div>
+                        <span class="price">$72,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card" data-type="sedan" data-price="32000" data-year="2023">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Compact Sedan" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>Honda Accord 2023</h3>
+                        <p>Reliable and fuel-efficient daily driver</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 8,000 mi</span>
+                            <span>⛽ Hybrid</span>
+                            <span>🚗 4-Door</span>
+                        </div>
+                        <span class="price">$32,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card" data-type="luxury" data-price="95000" data-year="2024">
+                    <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Luxury SUV" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>Range Rover Sport 2024</h3>
+                        <p>Luxury SUV with off-road capabilities</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 3,000 mi</span>
+                            <span>⛽ Diesel</span>
+                            <span>🚗 5-Seater</span>
+                        </div>
+                        <span class="price">$95,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+
+                <div class="vehicle-card" data-type="sports" data-price="68000" data-year="2023">
+                    <img src="https://images.unsplash.com/photo-1544828262-6bce942038c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sports Coupe" loading="lazy">
+                    <div class="vehicle-info">
+                        <h3>BMW M4 Competition</h3>
+                        <p>Track-ready sports coupe with premium features</p>
+                        <div class="vehicle-specs">
+                            <span>🛣️ 5,500 mi</span>
+                            <span>⛽ Premium</span>
+                            <span>🚗 2-Door</span>
+                        </div>
+                        <span class="price">$68,000</span>
+                        <button class="btn btn-primary inquire-btn">Inquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MBGLOBAL WHEELS</h3>
+                    <p>Your trusted gateway to premium automotive solutions since 2025.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@mbglobalwheels.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Address: 123 Automotive Drive, City, State</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MBGLOBAL WHEELS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
