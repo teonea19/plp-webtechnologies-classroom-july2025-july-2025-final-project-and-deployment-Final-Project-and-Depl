@@ -1,90 +1,190 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+MBGLOBAL WHEELS - Automotive Dealership Website
+https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+A professional, responsive website for MBGLOBAL WHEELS automotive dealership featuring vehicle sales, import/export services, and maintenance solutions.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+🌐 Live Demo
+View Live Website: https://teonea19.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/
 
----
+📋 Project Overview
+MBGLOBAL WHEELS is a comprehensive automotive dealership website built with modern web technologies. The site showcases the company's services, vehicle inventory, and provides seamless customer interaction through responsive design and intuitive user experience.
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+Key Features
+Responsive Design: Fully optimized for desktop, tablet, and mobile devices
 
-Before you write any code, take time to plan:
+Multi-page Structure: 5 distinct pages with cohesive navigation
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+Vehicle Inventory: Interactive filtering and search capabilities
 
-**Goal:** Show intentional structure and user journey across the site.
+Contact System: Form validation and inquiry management
 
----
+Modern UI/UX: Smooth animations and professional automotive styling
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+Performance Optimized: Fast loading with optimized images and code
 
-Using your plan, begin building:
+🚀 Pages Included
+Home - Landing page with featured vehicles and services overview
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+About Us - Company history, mission, and values
 
-Each page should:
+Services - Detailed service offerings and process flow
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+Inventory - Vehicle catalog with advanced filtering
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Contact - Inquiry form and business information
 
----
+🛠️ Technologies Used
+HTML5 - Semantic markup and modern structure
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+CSS3 - Responsive design, Flexbox, Grid, and animations
 
-Before deployment, refactor your project to follow production-friendly practices:
+JavaScript - Interactive features and form validation
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+Unsplash API - High-quality automotive images
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Google Fonts - Inter font family for modern typography
 
----
+📁 Project Structure
+text
+mbglobal-wheels/
+│
+├── index.html          # Home page
+├── about.html          # About Us page
+├── services.html       # Services page
+├── inventory.html      # Vehicle inventory
+├── contact.html        # Contact page
+├── style.css           # All styles (responsive design)
+├── script.js           # All JavaScript functionality
+│
+├── README.md           # Project documentation
+└── (deployment config files)
+🎯 Key Functionality
+Interactive Elements
+Mobile hamburger menu navigation
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
+Vehicle inventory filtering (type, price, year)
 
-Once your project is complete, choose a method to **host your site online**.
+Contact form with real-time validation
 
-You can use:
+Smooth scrolling and animations
 
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
+Image lazy loading for performance
 
-Deploy your project and confirm that:
+Responsive Features
+Flexible grid layouts
 
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
+Mobile-first design approach
 
-**Goal:** Publish your work online and make it accessible to the world.
+Touch-friendly interface elements
 
----
+Optimized images for different screen sizes
 
-## Deliverables
+User Experience
+Consistent navigation across all pages
 
-1. A GitHub repository containing:
+Clear call-to-action buttons
 
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
+Professional automotive styling
 
----
+Accessibility considerations
 
-## Outcome
+🚀 Deployment
+GitHub Pages
+Fork this repository
 
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+Go to repository Settings → Pages
+
+Select source branch (usually main or gh-pages)
+
+Your site will be available at https://your-username.github.io/mbglobal-wheels
+
+Netlify
+Drag and drop the project folder to Netlify dashboard
+
+Or connect your GitHub repository for automatic deployments
+
+Custom domain can be added in settings
+
+Vercel
+Install Vercel CLI: npm i -g vercel
+
+Run vercel in project directory
+
+Follow the prompts for deployment
+
+🛠️ Local Development
+To run this project locally:
+
+Clone the repository
+
+bash
+git clone https://github.com/your-username/mbglobal-wheels.git
+cd mbglobal-wheels
+Serve the files
+
+Use a local server like Live Server extension in VS Code
+
+Or use Python: python -m http.server 8000
+
+Or use Node.js: npx http-server
+
+Open in browser
+
+Navigate to http://localhost:8000 or your chosen port
+
+📱 Browser Compatibility
+Chrome 90+
+
+Firefox 88+
+
+Safari 14+
+
+Edge 90+
+
+🔧 Customization Guide
+Updating Content
+Edit HTML files for text content
+
+Modify style.css for styling changes
+
+Update script.js for functionality enhancements
+
+Adding New Vehicles
+Edit inventory.html
+
+Add new vehicle card with proper data attributes:
+
+html
+<div class="vehicle-card" data-type="suv" data-price="45000" data-year="2024">
+    <!-- vehicle content -->
+</div>
+Modifying Services
+Update services.html
+
+Add/remove service cards as needed
+
+Ensure consistent styling in CSS
+
+📞 Contact Information
+MBGLOBAL WHEELS
+
+Email: info@mbglobalwheels.com
+
+Phone: +1 (555) 123-4567
+
+Address: 123 Automotive Drive, City, State
+
+📄 License
+This project is open source and available under the MIT License.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check issues page for open issues.
+
+🏆 Acknowledgments
+Images provided by Unsplash
+
+Icons from Emoji
+
+Fonts from Google Fonts
+
+Built with ❤️ for MBGLOBAL WHEELS Automotive Dealership
